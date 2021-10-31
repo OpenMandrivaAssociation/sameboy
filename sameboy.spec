@@ -1,20 +1,20 @@
+%define oname Sameboy
 
 Name:           sameboy
 Version:        0.14.7
-Release:        1%{?dist}
+Release:        1
 Summary:        Game Boy and Game Boy Color emulator written in C
 
 License:        MIT
 URL:            https://github.com/LIJI32/SameBoy
-Source0:        %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/LIJI32/SameBoy/archive/v%{version}/%{oname}-%{version}.tar.gz
 
 Requires:       hicolor-icon-theme
-BuildRequires:  gcc
-BuildRequires:  make
-BuildRequires:  rgbds
-BuildRequires:	pkgconfig(sdl2)
-BuildRequires:	pkgconfig(gl)
-BuildRequires:  desktop-file-utils
+BuildRequires: make
+BuildRequires: rgbds
+BuildRequires: pkgconfig(sdl2)
+BuildRequires: pkgconfig(gl)
+BuildRequires: desktop-file-utils
 
 %description
 SameBoy is an open source Game Boy (DMG) and Game Boy Color (CGB) emulator,
@@ -26,7 +26,6 @@ It also includes a text-based debugger with expression evaluation.
 %autosetup -n SameBoy-%{version}
 
 %build
-%set_build_flags
 %make_build sdl DATA_DIR=%{_datadir}/%{name}/
 
 
@@ -66,23 +65,3 @@ desktop-file-install \
 %{_datadir}/icons/hicolor/*/mimetypes/x-gameboy*rom.png
 %license LICENSE
 %doc README.md
-
-
-%changelog
-* Sat Oct 30 2021 Jan Drögehoff <sentrycraft123@gmail.com> - 0.14.7-1
-- Update to 0.14.7
-
-* Fri Oct 22 2021 Jan Drögehoff <sentrycraft123@gmail.com> - 0.14.6-1
-- Update to 0.14.6
-
-* Sun Aug 01 2021 Jan Drögehoff <sentrycraft123@gmail.com> - 0.14.5-1
-- Update to 0.14.5
-
-* Sun Aug 01 2021 Jan Drögehoff <sentrycraft123@gmail.com> - 0.14.4-1
-- Update to 0.14.4
-
-* Fri Jul 23 2021 Fedora Release Engineering <releng@fedoraproject.org> - 0.14.3-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
-
-* Mon Apr 26 2021 Jan Drögehoff <sentrycraft123@gmail.com> - 0.14.3-1
-- Initial spec
