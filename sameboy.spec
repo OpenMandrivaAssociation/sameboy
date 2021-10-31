@@ -1,4 +1,4 @@
-%define oname Sameboy
+%define oname SameBoy
 
 Name:           sameboy
 Version:        0.14.7
