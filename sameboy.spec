@@ -2,7 +2,7 @@
 %define oname SameBoy
 
 Name:           sameboy
-Version:        0.15
+Version:        0.15.1
 Release:        1
 Summary:        Game Boy and Game Boy Color emulator written in C
 
