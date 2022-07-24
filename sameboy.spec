@@ -58,6 +58,7 @@ desktop-file-install \
 %dir %{_datadir}/%{name}/Shaders
 %{_datadir}/%{name}/Shaders/*.fsh
 %{_datadir}/%{name}/LICENSE
+%{_datadir}/sameboy/Palettes
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/applications/%{name}-terminal.desktop
