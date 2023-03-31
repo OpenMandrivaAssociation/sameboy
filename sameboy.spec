@@ -3,7 +3,7 @@
 
 Name:           sameboy
 Version:        0.15.8
-Release:        1
+Release:        2
 Summary:        Game Boy and Game Boy Color emulator written in C
 
 License:        MIT
