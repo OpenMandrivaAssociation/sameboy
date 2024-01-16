@@ -2,10 +2,10 @@
 %define oname SameBoy
 
 Name:           sameboy
-Version:        0.16.1
+Version:        0.16.2
 Release:        1
 Summary:        Game Boy and Game Boy Color emulator written in C
-
+Group:          Emulator/Games
 License:        MIT
 URL:            https://github.com/LIJI32/SameBoy
 Source0:        https://github.com/LIJI32/SameBoy/archive/v%{version}/%{oname}-%{version}.tar.gz
