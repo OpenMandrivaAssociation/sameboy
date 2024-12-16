@@ -64,7 +64,7 @@ desktop-file-install \
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/applications/%{name}-terminal.desktop
-%{_datadir}/mime/packages/%{name}.xml
+#{_datadir}/mime/packages/%{name}.xml
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/icons/hicolor/*/mimetypes/x-gameboy*rom.png
 %license LICENSE
