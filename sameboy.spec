@@ -16,6 +16,7 @@ BuildRequires: rgbds
 BuildRequires: pkgconfig(sdl2)
 BuildRequires: pkgconfig(gl)
 BuildRequires: desktop-file-utils
+BuildRequires: pkgconfig(glib-2.0)
 
 %description
 SameBoy is an open source Game Boy (DMG) and Game Boy Color (CGB) emulator,
