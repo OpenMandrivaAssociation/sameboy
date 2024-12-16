@@ -53,6 +53,7 @@ desktop-file-install \
     %{name}-terminal.desktop
 
 %files
+%{_bindir}/sameboy-thumbnailer
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/*.bin
 %{_datadir}/%{name}/*.sym
@@ -64,7 +65,8 @@ desktop-file-install \
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/applications/%{name}-terminal.desktop
-#{_datadir}/mime/packages/%{name}.xml
+%{_datadir}/mime/sameboy.xml
+%{_datadir}/thumbnailers/sameboy.thumbnailer
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/icons/hicolor/*/mimetypes/x-gameboy*rom.png
 %license LICENSE
